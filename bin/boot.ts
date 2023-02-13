@@ -7,7 +7,7 @@ const app = new cdk.App();
 
 
 new AppStack(app, 'AppStack', {
-      env: { account: '901434253625', region: 'us-east-2' }
+      env: { account: '', region: 'us-east-2' }
 });
 
 
