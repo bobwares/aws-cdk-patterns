@@ -1,14 +1,16 @@
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import {AppStack} from "../lib/app-stack";
+import {DaoStack} from "./DaoStack";
+
 
 // initialize cdk app
 const app = new cdk.App();
 
+const myEnvVar = process.env.AWS_PROFILE;
+console.log(myEnvVar);
 
-new AppStack(app, 'AppStack', {
-      env: { account: '', region: 'us-east-2' }
-});
+
+new DaoStack(app, 'DaoStack', {});
 
 
 app.synth();

@@ -2,7 +2,7 @@
   "name": "application",
   "version": "0.1.0",
   "bin": {
-    "app-stack": "bin/boot.js"
+    "app-stack": "infrastructure/Launcher.js"
   },
   "scripts": {
     "build": "tsc",
@@ -18,6 +18,9 @@
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",
     "aws-cdk": "2.8.0",
+    "aws-cdk-lib": "^2.8.0",
+    "constructs": "^10.1.250",
+    "esbuild": "^0.17.8",
     "eslint": "^8.34.0",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.4",
@@ -25,17 +28,10 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "@aws-cdk/aws-iam": "^1.191.0",
-    "@aws-cdk/aws-kms": "^1.191.0",
-    "@aws-cdk/aws-lambda": "^1.191.0",
-    "@aws-cdk/aws-s3": "^1.191.0",
-    "@aws-cdk/pipelines": "^1.191.0",
-    "@types/aws-lambda": "^8.10.110",
-    "aws-cdk-lib": "2.8.0",
-    "aws-lambda": "^1.0.7",
-    "aws-sdk": "^2.1313.0",
-    "constructs": "^10.0.0",
-    "pino": "^8.10.0",
-    "source-map-support": "^0.5.21"
+    "@aws-amplify/auth": "^5.1.8",
+    "@types/aws-lambda": "^8.10.76",
+    "aws-amplify": "^5.0.14",
+    "aws-sdk": "^2.1315.0",
+    "constructs": "^10.0.0"
   }
 }
